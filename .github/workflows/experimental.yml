@@ -1,0 +1,16 @@
+name: experimental
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  experimental:
+    name: experimental
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run scrip
+        run: |
+          check.sh
