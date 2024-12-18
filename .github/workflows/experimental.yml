@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Grant execute permission for check.sh
         run: |
-          chmod +x ./.github/scripts/check.sh \
+          chmod +x ./.github/scripts/check.sh 
           chmod +x ./.github/scripts/check_v.sh
       - name: Run scrip
         run: |
-          ./.github/scripts/check.sh \
+          ./.github/scripts/check.sh 
           ./.github/scripts/check_v.sh
