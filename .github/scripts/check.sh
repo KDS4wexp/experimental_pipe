@@ -1,1 +1,2 @@
-echo "CHECK: ${#CHECK}"
+#!/bin/bash
+echo "CHECK: ${CHECK}"
