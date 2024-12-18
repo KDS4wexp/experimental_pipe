@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run scrip
         run: |
-          check.sh
+          ./.github/scrips/check.sh
