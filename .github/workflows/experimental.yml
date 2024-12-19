@@ -22,10 +22,10 @@ jobs:
 
       - name: DEBUG
         run: |
-          echo "${CHECK_S}"
-          echo "${CHECK_ENV}"
-          echo "${#CHECK_S}"
-          echo "${#CHECK_ENV}"
+          echo "${secrets.CHECK_S}"
+          echo "${secrets.CHECK_ENV}"
+          echo "${#secrets.CHECK_S}"
+          echo "${#secrets.CHECK_ENV}"
 
       # - name: DEBUG +
       #   run: |
