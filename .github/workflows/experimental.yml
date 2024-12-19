@@ -19,3 +19,8 @@ jobs:
         run: |
           ./.github/scripts/check.sh 
           ./.github/scripts/check_v.sh
+
+      - name: DEBUG
+        run: |
+          echo ${CHECK}
+          echo ${CHECK_V}
