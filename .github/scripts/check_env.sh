@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "SCRIPT CHECK_ENV LENGHT: ${#CHECK_ENV}"
+echo "SCRIPT CHECK_ENV: ${CHECK_ENV}"
