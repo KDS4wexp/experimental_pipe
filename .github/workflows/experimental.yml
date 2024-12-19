@@ -9,6 +9,7 @@ jobs:
   experimental:
     name: experimental
     runs-on: ubuntu-latest
+    environment: CHECK_ENV
     steps:
       - uses: actions/checkout@v4
       - name: Grant execute permission for check.sh
@@ -22,17 +23,7 @@ jobs:
 
       - name: DEBUG
         run: |
-          echo "${secrets.CHECK_S}"
-          echo "${secrets.CHECK_ENV}"
-          echo "${#secrets.CHECK_S}"
-          echo "${#secrets.CHECK_ENV}"
-
-      # - name: DEBUG +
-      #   run: |
-      #     echo "${CHECK_S}"
-      #     echo "${CHECK_ENV}"
-      #     echo "${#CHECK_S}"
-      #     echo "${#CHECK_ENV}"
-      #   env:
-      #     CHECK: ${{secrets.CHECK_S}}
-      #     CHECK_V: ${{secrets.CHECK_ENV}}
+          echo "${CHECK_S}"
+          echo "${CHECK_ENV}"
+          echo "${#CHECK_S}"
+          echo "${#CHECK_ENV}"
