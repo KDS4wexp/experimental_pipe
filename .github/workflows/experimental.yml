@@ -24,6 +24,6 @@ jobs:
         run: |
           echo "${#CHECK}"
           echo "${#CHECK_V}"
-        env:
-          CHECK: ${{secrets.CHECK}}
-          CHECK_V: ${{secrets.CHECK_V}}
+        # env:
+        #   CHECK: ${{secrets.CHECK}}
+        #   CHECK_V: ${{secrets.CHECK_V}}
