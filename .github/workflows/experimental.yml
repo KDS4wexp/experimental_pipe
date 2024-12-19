@@ -22,5 +22,8 @@ jobs:
 
       - name: DEBUG
         run: |
-          echo $CHECK
-          echo $CHECK_V
+          echo "${#CHECK}"
+          echo "${#CHECK_V}"
+        env:
+          CHECK: ${{secrets.CHECK}}
+          CHECK_V: ${{secrets.CHECK_V}}
